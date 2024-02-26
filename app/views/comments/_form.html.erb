@@ -11,3 +11,12 @@
     <%= form.submit %>
   </p>
 <% end %>
+
+<%
+=begin%>
+ <p>
+  <%= form.label :status %><br>
+  <%= form.select :status, Visible::VALID_STATUSES, selected: 'public' %>
+</p> 
+<%
+=end%>
